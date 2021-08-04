@@ -11,8 +11,10 @@ function SimpleInterest(){
     let TotalInterest = AnnualInterest * i;//250
     let TotalAmount = TotalInterest + PrincipalAmount;//1250
 
-    alert("Your Principal Amount is : " + PrincipalAmount)
-    alert("Your Annual Interest is : " + AnnualInterest)
-    alert("Your Total Interest is : " + TotalInterest)
-    alert("Your Total Amount is : " + TotalAmount)
+    let result = alert("Your Principal Amount is : " + PrincipalAmount + " Taka\n" +
+                        "Your Annual Interest is : " + AnnualInterest + " Taka\n" +
+                        "Your Total Interest is : " + TotalInterest + " Taka\n" + 
+                        "Your Total Amount is : " + TotalAmount + " Taka\n");
+    
+    return result;
 }
