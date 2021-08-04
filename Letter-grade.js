@@ -2,8 +2,11 @@
 
 function LetterGrade(){
     let marks = parseFloat(prompt("Enter Your Marks"));
-    if( marks >= 90 && marks <=100){
-        alert("You Got Golden A+");
+    
+    if(marks > 100){
+        alert("Grade Tumar P*ki Diye Bore Dibo")
+    }else if( marks >= 90){
+        alert("You Got Golden A+")
     }else if(marks >= 80){
         alert("You Got A+")
     }else if(marks >= 70){
@@ -19,6 +22,6 @@ function LetterGrade(){
     }else if(marks < 33){
         alert("You Are Fail")
     }else{
-        alert("Grade Tumar P*ki Diye Bore Dibo")
+        alert("Sorry You Are Not Allowed")
     }
 }
