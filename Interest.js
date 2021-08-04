@@ -2,12 +2,17 @@
 
 function SimpleInterest(){
     let p =parseFloat(prompt("Enter Principal Amount")); //1000
-    let r =parseFloat(prompt("Enter Interest Rate")); //10
-    r = (p/100)*r; //10
+    let r =parseFloat(prompt("Enter Interest Rate")); //5
+    r = (p*r)/100; //50
     let i =parseFloat(prompt("Enter Years"));//5
 
-    let PrincipalAmount = p;//100
-    let AnnualInterest = (p*r*1)-p;//900
-    let TotalInterest = AnnualInterest * i;//4500 1000 5 50
-    let TotalAmount = 
+    let PrincipalAmount = p;//1000
+    let AnnualInterest = r//50
+    let TotalInterest = AnnualInterest * i;//250
+    let TotalAmount = TotalInterest + PrincipalAmount;//1250
+
+    alert("Your Principal Amount is : " + PrincipalAmount)
+    alert("Your Annual Interest is : " + AnnualInterest)
+    alert("Your Total Interest is : " + TotalInterest)
+    alert("Your Total Amount is : " + TotalAmount)
 }
